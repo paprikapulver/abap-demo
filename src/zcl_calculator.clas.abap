@@ -11,6 +11,12 @@ public section.
       !B type FLOAT
     returning
       value(RESULT) type FLOAT .
+  methods ADD
+    importing
+      !A type FLOAT
+      !B type FLOAT
+    returning
+      value(RESULT) type FLOAT .
 protected section.
 private section.
 ENDCLASS.
@@ -18,6 +24,13 @@ ENDCLASS.
 
 
 CLASS ZCL_CALCULATOR IMPLEMENTATION.
+
+
+  METHOD add.
+
+    result = a + b.
+
+  ENDMETHOD.
 
 
   METHOD multiply.
