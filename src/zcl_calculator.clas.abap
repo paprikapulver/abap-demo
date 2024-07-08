@@ -11,6 +11,12 @@ public section.
       !B type FLOAT
     returning
       value(RESULT) type FLOAT .
+  methods ADD
+    importing
+      !A type FLOAT
+      !B type FLOAT
+    returning
+      value(RESULT) type FLOAT   
   methods SUBTRACT
     importing
       !A type FLOAT
@@ -24,6 +30,13 @@ ENDCLASS.
 
 
 CLASS ZCL_CALCULATOR IMPLEMENTATION.
+
+
+  METHOD add.
+
+    result = a + b.
+
+  ENDMETHOD.
 
 
   METHOD multiply.
